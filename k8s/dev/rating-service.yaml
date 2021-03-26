@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: bookinfo-dev-ratings
-  namespace: student048-bookinfo-dev
+  namespace: student48-bookinfo-dev
 spec:
   type: ClusterIP
   ports:
