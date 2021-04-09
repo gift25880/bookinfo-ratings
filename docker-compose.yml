@@ -1,23 +1,7 @@
 services:
-  ratings-dev:
+  ratings:
     build: .
     image: ghcr.io/gift25880/bookinfo-ratings:dev
-    ports:
-      - "8080:8080"
-    environment:
-      SERVICE_VERSION: v2
-      MONGO_DB_URL: mongodb://mongodb:27017/ratings
-  ratings-uat:
-    build: .
-    image: ghcr.io/gift25880/bookinfo-ratings:uat
-    ports:
-      - "8080:8080"
-    environment:
-      SERVICE_VERSION: v2
-      MONGO_DB_URL: mongodb://mongodb:27017/ratings
-  ratings-prd:
-    build: .
-    image: ghcr.io/gift25880/bookinfo-ratings:prd
     ports:
       - "8080:8080"
     environment:
