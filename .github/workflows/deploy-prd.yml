@@ -41,4 +41,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Check health check page
-        run: curl http://bookinfo.opsta.net/student[X]/ratings/health | grep "Ratings is working"
+        run: curl http://bookinfo.opsta.net/student48/ratings/health | grep "Ratings is working"
